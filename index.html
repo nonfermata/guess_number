@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply JavaScript example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main_container">
+        <h1>Угадай число</h1>
+        <p class="conditions">Программа сама выбрала случайное число от 1 до 100. Посмотрим, сможешь ли ты угадать его за 10 попыток (или меньше).
+            После каждой попытки будет подсказка :)
+        </p>
+        <label for="guessField">Введи число: </label>
+        <input type="text" id="guessField" class="guessField">
+        <input type="submit" class="guessSubmit btn" value="Проверить">
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="guess_status"></p>
+            <p class="more_or_less"></p>
+            <button class="reset btn">Начать снова</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
